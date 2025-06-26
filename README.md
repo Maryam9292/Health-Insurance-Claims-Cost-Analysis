@@ -47,7 +47,7 @@ This project analyzes medical insurance claim costs using machine learning to pr
 ---
 
 # Importance of Top 10 Features
-![Bar Chart](images/images/feature_imp.png)
+![Power BI Dashboard Preview2](images/images/feature_imp.png)
 **Power BI Analysis Findings:**
 - Smokers incur 3.8x higher costs than non-smokers
 - Obese claimants represent 68% of high-cost cases
