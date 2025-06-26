@@ -16,7 +16,12 @@ This project analyzes medical insurance claim costs using machine learning to pr
   - High-risk flag (smoker + BMI ≥30 + pre-existing condition)  
 
 ## Power BI Dashboard Insights
-![Power BI Dashboard Preview](https://i.imgur.com/placeholder-pbi.png)
+# Claims Cost Analysis
+![Power BI Dashboard Preview](images/cost_analysis.png)
+
+---
+# Analysis of Key Drivers with Filters for Different Regions
+![Power BI Dashboard Preview2](images/key_drivers.png)
 
 **Key Visualizations:**
 1. High-Risk Claimant Distribution by Region
@@ -48,57 +53,3 @@ This project analyzes medical insurance claim costs using machine learning to pr
 `insurance.csv` with columns:  
 - `age`, `sex`, `bmi`, `children`, `smoker`, `region`, `charges`  
 - **Engineered Features**: `pre_existing_condition`, `bmi_category`, `age_group`, `high_risk`  
-
-## Workflow  
-```mermaid
-graph LR
-A[Raw Data] --> B[Python Processing]
-B --> C[Feature Engineering]
-C --> D[ML Modeling]
-D --> E[Power BI Dashboard]
-E --> F[Business Insights]
-
-Use these key DAX measures:
-
-### DAX Measure Used
-Avg Cost = AVERAGE('Claims'[charges])
-High Risk % = DIVIDE(
-    CALCULATE(COUNTROWS('Claims'), 'Claims'[high_risk]=1),
-    COUNTROWS('Claims')
-)
-Cost Variance = [Predicted Cost] - [Actual Cost]
-
-### Recommended Repository Structure with Power BI Files:
-insurance-claims-cost-analysis/
-├── data/
-│ ├── insurance.csv # Raw data
-│ └── final_insurance_dataset.csv # Processed data
-├── powerbi/
-│ ├── insurance_analysis.pbix # Power BI dashboard
-│ └── assets/ # Dashboard exports
-├── outputs/
-│ ├── plots/ # Saved visualizations
-│ └── models/ # Serialized trained models
-├── claims_cost_analysis.py # Main processing code
-├── README.md
-└── requirements.txt
-
-
-### Power BI Integration Highlights:
-1. **Dataset Connection**: Processed CSV feeds directly into Power BI data model
-2. **Key Visualizations**:
-   - Risk matrix heatmaps (BMI vs Age vs Cost)
-   - Geographical cost distribution maps
-   - Smoker impact donut charts
-   - Cost driver waterfall charts
-3. **Interactive Features**:
-   - Risk profile sliders (adjust BMI/smoking thresholds)
-   - Region comparison tool
-   - Claimant demographic filters
-4. **Business Insights**:
-   - High-risk group segmentation
-   - Cost reduction opportunity analysis
-   - Premium pricing recommendations
-
-This structure highlights the complete workflow from Python processing to Power BI business intelligence, making it valuable for both technical and business stakeholders.
-
