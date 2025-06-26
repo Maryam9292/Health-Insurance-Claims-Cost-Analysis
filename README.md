@@ -37,6 +37,12 @@ This project analyzes medical insurance claim costs using machine learning to pr
 - Year-over-year cost trend projections
 - Claimant demographic segmentation
 
+**Power BI Analysis Findings:**
+- Smokers incur 3.8x higher costs than non-smokers
+- Obese claimants represent 68% of high-cost cases
+- Southwest region has 22% more high-risk claimants
+- 60+ age group accounts for 41% of top-cost claims
+---
 ## Results  
 | Model                  | R² Score | 
 |------------------------|----------|
@@ -50,11 +56,6 @@ This project analyzes medical insurance claim costs using machine learning to pr
 ![Bar Chart](images/feature_imp.png)
 
 ---
-**Power BI Analysis Findings:**
-- Smokers incur 3.8x higher costs than non-smokers
-- Obese claimants represent 68% of high-cost cases
-- Southwest region has 22% more high-risk claimants
-- 60+ age group accounts for 41% of top-cost claims
 
 ## Dataset  
 `insurance.csv` with columns:  
