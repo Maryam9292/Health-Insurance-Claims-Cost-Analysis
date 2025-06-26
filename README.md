@@ -20,8 +20,6 @@ This project analyzes medical insurance claim costs using machine learning to pr
 ![Power BI Dashboard Preview](images/cost_analysis.png)
 
 ---
-# Analysis of Key Drivers with Filters for Different Regions
-![Power BI Dashboard Preview2](images/key_drivers.png)
 
 **Key Visualizations:**
 1. High-Risk Claimant Distribution by Region
@@ -29,6 +27,9 @@ This project analyzes medical insurance claim costs using machine learning to pr
 3. Smoker vs Non-Smoker Cost Comparison
 4. Pre-existing Condition Impact Analysis
 5. Top 10 Cost Driver Indicators
+ ---
+# Analysis of Key Drivers with Filters for Different Regions
+![Power BI Dashboard Preview2](images/key_drivers.png)
 
 **Interactive Features:**
 - Drill-down regional analysis
